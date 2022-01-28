@@ -25,3 +25,7 @@ We started by using axios to get the information on the bodies and then organise
 * useParams
 * React bootstrap
 * Bootstrap
+
+## Creators
+
+Made by [Ollie](https://github.com/ollie09cal) and [Florent](https://github.com/florent-haxhiu)
