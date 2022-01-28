@@ -1,8 +1,22 @@
 $logo-blue: #51bbe0;
 $light-grey: rgba(0,0,0,0.05);
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('./../../images/stars-background.gif')
+}
+
+.card {
+  background-image: url('../../images/stars-background.gif');
+  color: white;
+}
+
+h1 {
+  color: white;
 }
 
 .home-container{

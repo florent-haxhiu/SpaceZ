@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-// import Spinner from '../utilities/Spinner'
 import Earth from './../../../images/earth-icon.png'
 import Jupiter from './../../../images/Jupiter.png'
 import Saturn from './../../../images/Saturn.png'
@@ -16,12 +15,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-
-// Get images
-// Make filter
-// Style it nicer
-// Pages for the planets. Create buttons. useParams.
-
+import Spinner from '../Spinner'
 
 const PlanetsIndex = () => {
 
@@ -72,7 +66,7 @@ const PlanetsIndex = () => {
               })}
             </>
             :
-            <h2 className='error'>error: {hasError.message}</h2>
+            <Spinner />
           }
         </Row>
       </Container>

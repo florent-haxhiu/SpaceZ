@@ -2,7 +2,7 @@ import React from 'react'
 import spinnerImg from './../../images/spinner.gif'
 
 const Spinner = () => (
-  <div className="spinner-wrapper justify-content-center">
+  <div className="spinner-wrapper d-flex align-item-center justify-content-center">
     <img src={spinnerImg} alt="" className="spinner" />
   </div>
 )

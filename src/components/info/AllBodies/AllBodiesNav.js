@@ -7,6 +7,14 @@ import Moon from './../../../images/moon.png'
 import Comet from './../../../images/comet.png'
 import DwarfPlanet from './../../../images/dwarf-planet.png'
 import Star from './../../../images/sun.png'
+import Uranus from './../../../images/Uranus.png'
+import Jupiter from './../../../images/Jupiter.png'
+import Mars from './../../../images/Mars.png'
+import Neptune from './../../../images/Neptune.png'
+import Saturn from './../../../images/Saturn.png'
+import Venus from './../../../images/Venus.png'
+import Mercury from './../../../images/Mercury.png'
+import Earth from './../../../images/earth-icon.png'
 
 import Spinner from '../Spinner.js'
 import Row from 'react-bootstrap/Row'
@@ -36,6 +44,7 @@ const AllBodiesNav = ({  planets, hasError }) => {
     console.log(filteredPlanets)
   }
   
+  const planetArr = [Uranus, Neptune, Jupiter, Mars, Mercury, Saturn, Earth, Venus]
 
   
   return (
@@ -46,17 +55,17 @@ const AllBodiesNav = ({  planets, hasError }) => {
         {bodyTypeList.map((body, i) => <option key={i} value={body}>{body}</option>)}
       </select>
 
-      <Row>
+      <Row className='align-items-end'>
         {planets.length ?
           <>
             {(filteredPlanets.length ? filteredPlanets : planets).map((body, i) => {
               return (
                 <Col key={i} md='6' lg='3' className='mb-4'>
-                  <Card className='coloring'>
-                    <div className="index-images m-auto justify-content-center">
+                  <Card className='coloring h-100'>
+                    <div className="index-images m-auto justify-content-center align-items-end">
                         
                       {body.bodyType === 'Planet' ? 
-                        <img className='w-75' src={Planet} alt="image of earth" /> 
+                        <img className='img-fluid' src={planetArr[i]} alt={body.englishName} />
                         : 
                         body.bodyType === 'Asteroid' ? 
                           <img className='w-50' src={Asteroid} alt="image of asteroid" /> 
@@ -76,6 +85,7 @@ const AllBodiesNav = ({  planets, hasError }) => {
                     <Card.Footer className='text-center'>
                       <span className="bold">Name:</span> {body.englishName}
                       <em className='d-block'><span className="bold">Body Type:</span> {body.bodyType}</em>
+                      <em className='d-block'><span className="bold">Gravity: </span> {body.gravity} m/s²</em>
                     </Card.Footer>
                   </Card>
                 </Col>

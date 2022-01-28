@@ -13,17 +13,17 @@ import PlanetSingle from './components/info/AllPlanets/planetSingle'
 
 const App = () => {
   return (
-    <div className="site-wrapper">
-      <BrowserRouter>
-        <SiteNavbar />
+    <BrowserRouter>
+      <SiteNavbar />
+      <div className="site-wrapper">
         <Routes>
           <Route path='planets/:planetId' element={<PlanetSingle />} />
           <Route path="planets" element={<PlanetsIndex />} />
           <Route path="bodiesindex" element={<BodiesIndex />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   )
 }
 
