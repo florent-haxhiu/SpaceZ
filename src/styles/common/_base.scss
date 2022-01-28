@@ -1,0 +1,63 @@
+$logo-blue: #51bbe0;
+$light-grey: rgba(0,0,0,0.05);
+
+body {
+  background-image: url('./../../images/stars-background.gif')
+}
+
+.home-container{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  color: white;
+  font-weight: bold;
+  img {
+    width: 90%;
+  }
+}
+
+.navbar{
+  .home-icon {
+    width: 10%;
+  }
+  .navbar-brand{
+    a{
+      text-decoration: none;
+    }
+  }
+  .nav-item{
+    margin-left: 20px;
+    a:not(.btn), span{
+      color: black;
+      font-size: 150%;
+      text-decoration: none;
+    }
+    span{
+      cursor: pointer;
+    }
+  }
+}
+
+.index-images {
+  display: flex;
+  img{
+    margin: 0 auto;
+  }
+}
+
+.coloring{
+  background: none;
+  color: white;
+}
+.all-bodies{
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 500%;
+  }
+}
+.bold{
+  font-weight: bolder;
+}

@@ -1,0 +1,21 @@
+$planets: (
+  'Earth': url('../../images/earth-icon.png'),
+  'Jupiter': url('../../images/Jupiter.png'),
+  'Mars': url('../../images/Mars.png'),
+  'Neptune': url('../../images/Neptune.png'),
+  'Uranus': url('../../images/Uranus.png'),
+  'Saturn': url('../../images/Saturn.png'),
+  'Venus': url('../../images/Venus.png'),
+  'Mercury': url('../../images/Mercury.png')
+);
+
+// @each $name, $picture in $planets {
+//   ##{$name} {
+//     background-image: $picture;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     height: 19rem;
+//     width: 19rem;
+//   }
+// }

@@ -1,0 +1,11 @@
+$logo-blue: #51bbe0;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import '../../node_modules/bootstrap/scss/variables';
+
+@import './common/base';
+@import './common/eachPlanet';
+@import './common/images';
+@import './common/navbar';
+@import './common/planetText';
+
